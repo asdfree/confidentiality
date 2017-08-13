@@ -215,7 +215,7 @@ your.replicate.weights <- data.frame( unclass( api.jkn$repweights ) )
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # start with the replicate weights object from the script
-transposed.rw <- t( your.replicate.weights )
+transposed.rw <- data.frame( t( your.replicate.weights ) )
 
 # the first record of apistrat has dnum==401 and stype=='E'
 
