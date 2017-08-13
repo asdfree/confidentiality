@@ -99,6 +99,8 @@ api.jk1 <-
 # balanced repeated replication method
 # with a fay's adjustment
 # (this is the most common setup from the united states census bureau)
+try( {
+
 api.fay <- 
 	as.svrepdesign( 
 		api.tsl.with.strata , 
@@ -108,6 +110,8 @@ api.fay <-
 		compress = FALSE # note: compressed replicate weights require less RAM but complicate the weight-extraction in step three
 	)
 
+} , silent = TRUE )
+	
 # however, if the sampling plan contains an
 # odd number of clusters within any stratum
 # you will hit this error
