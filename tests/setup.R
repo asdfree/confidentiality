@@ -1,3 +1,5 @@
+options("lodown.cachaca.savecache"=FALSE)
+
 
 # analyze survey data for free (http://asdfree.com) with the r language
 # how to create de-identified replicate weights
